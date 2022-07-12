@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="SetPassword Recovery" thread-count="10">
+	<listeners>
+		<listener
+			class-name="com.shakticoin.testlisteners.ExtentReportListener"></listener>
+	</listeners>
+	<test name="OnBoardTest" preserve-order="true">	
+		<classes>			
+			<class name="com.shakticoin.tests.OnBoardTest" />	
+		</classes>
+	</test>		
+	<test name="AddTrustedMobile" preserve-order="true">
+		<classes>
+			<class name="com.shakticoin.tests.PassRecAddTrustedMobileTest" />
+		</classes>
+	</test>
+	<test name="AddTrustedEmail" preserve-order="true">
+		<classes>
+			<class name="com.shakticoin.tests.PassRecAddTrustedEmailTest" />
+		</classes>
+	</test>
+	<test name="AddSecurityQA" preserve-order="true">
+		<classes>
+			<class name="com.shakticoin.tests.PassRecAddSecurityQuestionsTest" />
+		</classes>
+	</test>	
+	 <test name="UpdatePin" preserve-order="true">
+		<classes>
+			<class name="com.shakticoin.tests.PassRecUpdatePinTest" />
+		</classes>
+	</test>	 	
+</suite>

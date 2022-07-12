@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Forgot Password" thread-count="10">
+	<listeners>
+		<listener
+			class-name="com.shakticoin.testlisteners.ExtentReportListener">
+		</listener>
+	</listeners>
+	<test name="ForgotPassword" preserve-order="true">	
+		<classes>			
+			<class name="com.shakticoin.tests.ForgotPasswordTest" />	
+		</classes>
+	</test>	 	
+	<test name="ForgotPasswordWithTrustedMobile" preserve-order="true">
+		<classes>
+			<class name="com.shakticoin.tests.ForgotPassTrustedMobileTest" />
+		</classes>
+	</test>	
+</suite>

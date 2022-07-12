@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="10" guice-stage="DEVELOPMENT" name="Failed suite [ShaktiCoin test suite]">
+  <listeners>
+    <listener class-name="com.shakticoin.testlisteners.ExtentReportListener"/>
+  </listeners>
+  <test thread-count="10" name="OnBoard(failed)">
+    <classes>
+      <class name="com.shakticoin.tests.OnBoardTest">
+        <methods>
+          <include name="confirmPassword"/>
+          <include name="setUp"/>
+          <include name="inputMobileNumber"/>
+          <include name="setPin"/>
+          <include name="setPassword"/>
+        </methods>
+      </class> <!-- com.shakticoin.tests.OnBoardTest -->
+    </classes>
+  </test> <!-- OnBoard(failed) -->
+  <test thread-count="10" name="LicenseUpgrade(failed)">
+    <classes>
+      <class name="com.shakticoin.tests.LicenseUpgradeTest">
+        <methods>
+          <include name="fillAddressDetails"/>
+          <include name="setUp"/>
+          <include name="selectPaymentMethod"/>
+          <include name="doPayment"/>
+          <include name="upgradeLicense"/>
+        </methods>
+      </class> <!-- com.shakticoin.tests.LicenseUpgradeTest -->
+    </classes>
+  </test> <!-- LicenseUpgrade(failed) -->
+</suite> <!-- Failed suite [ShaktiCoin test suite] -->

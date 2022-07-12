@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="License" thread-count="10">
+	<listeners>
+		<listener
+			class-name="com.shakticoin.testlisteners.ExtentReportListener"></listener>
+	</listeners>
+	<test name="OnBoard" preserve-order="true">		
+			<classes>
+			<class name="com.shakticoin.tests.OnBoardTest" />			
+		</classes>
+	</test>			
+	<test name="PurchaseLicense" preserve-order="true">
+		<classes>
+			<class name="com.shakticoin.tests.PurchaseLicenseTest" />
+		</classes>
+	</test>	
+	 <test name="LicenseUpgrade" preserve-order="true">	
+		<classes>			
+			<class name="com.shakticoin.tests.LicenseUpgradeTest" />	
+		</classes>
+	</test>
+	 <test name="LicenceCancellation" preserve-order="true">	
+		<classes>			
+			<class name="com.shakticoin.tests.LicenseCancellationTest" />	
+		</classes>
+	</test>
+	<test name="PurchaseLicenseWithAmazonPay" preserve-order="true">
+		<classes>
+			<class name="com.shakticoin.tests.PurchaseLicenseAmazonTest" />
+		</classes>
+	</test>	
+	<test name="GuestLicensePurchase" preserve-order="true">	
+		<classes>			
+			<class name="com.shakticoin.tests.GuestLicensePurchaseTest" />	
+		</classes>
+	</test>		
+</suite>
